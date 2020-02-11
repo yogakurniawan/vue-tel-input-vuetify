@@ -1,0 +1,93 @@
+{
+  "name": "vue-tel-input-vuetify",
+  "version": "1.0.0",
+  "description": "International Telephone Input with Vuetify",
+  "author": "Yoga Kurniawan <yogaygk@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://yogakurniawan.github.io/vue-tel-input-vuetify/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yogakurniawan/vue-tel-input-vuetify.git"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "dev": "vue-cli-service serve",
+    "demo": "vue-cli-service build",
+    "build": "set NODE_ENV=production && npm run build:browser && npm run build:es && npm run build:umd",
+    "build:browser": "rollup --config build/rollup.config.browser.js",
+    "build:es": "rollup --config build/rollup.config.es.js",
+    "build:umd": "rollup --config build/rollup.config.umd.js",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "files": [
+    "dist/"
+  ],
+  "main": "dist/vue-tel-input-vuetify.umd.js",
+  "module": "dist/vue-tel-input-vuetify.esm.js",
+  "unpkg": "dist/vue-tel-input-vuetify.min.js",
+  "dependencies": {
+    "awesome-phonenumber": "^2.15.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.6.0",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@semantic-release/changelog": "^3.0.6",
+    "@semantic-release/git": "^8.0.0",
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-plugin-unit-jest": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "commitizen": "^4.0.3",
+    "core-js": "^2.6.5",
+    "cz-conventional-changelog": "^3.1.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "lint-staged": "^8.1.5",
+    "rollup": "^1.10.0",
+    "rollup-plugin-analyzer": "^3.0.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-css-only": "^1.0.0",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-vue": "^5.0.0",
+    "semantic-release": "^16.0.2",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "keywords": [
+    "vue",
+    "vuetify",
+    "telephone",
+    "phone",
+    "vue-tel-input",
+    "phone input",
+    "telephone input",
+    "input",
+    "international phone"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
