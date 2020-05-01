@@ -90,8 +90,6 @@ Use the `vue-tel-input-vuetify` component:
 
 ### Props
 
-  Test all props on [CodeSandbox](https://codesandbox.io/s/0yyyk45q7w?fontsize=14&module=%2Fsrc%2FApp.vue&moduleview=1).
-
   | Property | Type | Default value | Description |
   | -------- | ---- | ------------- | ----------- |
   | `autocomplete` | `String` | `'on'` | Native input 'autocomplete' attribute |
