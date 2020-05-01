@@ -16,7 +16,7 @@ International Telephone Input with Vuetify.
 - [Usage](#usage)
   - [Props](#props)
   - [Events](#events)
-- [Credits & Contributors](#credits-&-contributors)
+- [Credits & Contributors](#Credits-&-Contributors)
 
 ## Installation
 ### vue-cli
