@@ -22,7 +22,7 @@
       ref="input"
       type="tel"
       v-model="phone"
-      label="Enter a Phone Number"
+      :label="textFieldLabel"
       :autofocus="autofocus"
       :name="name"
       :disabled="disabled"
@@ -106,6 +106,10 @@ export default {
     value: {
       type: String,
       default: '',
+    },
+    textFieldLabel: {
+      type: String,
+      default: 'Enter a Phone Number',
     },
     placeholder: {
       type: String,

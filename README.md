@@ -2,7 +2,7 @@
 International Telephone Input with Vuetify.
 
 <p align="center">
-<img width="600px" alt="In-action GIF" src="https://thumbs.gfycat.com/EducatedPoliteBluefintuna-size_restricted.gif"/>
+<img width="600px" alt="In-action GIF" src="https://media.giphy.com/media/eNe0TdR03G7MMNkFab/giphy.gif"/>
 </p>
 
 
@@ -14,12 +14,9 @@ International Telephone Input with Vuetify.
   - [vuetify](#vuetify)
   - [npm](#npm)
   - [Browser](#browser)
-  - [Use as a custom field of `vue-form-generator`](#use-as-a-custom-field-of-vue-form-generator)
 - [Usage](#usage)
   - [Props](#props)
   - [Events](#events)
-  - [Slots](#slots)
-- [Typescript Support](#typescript-support)
 - [Credits & Contributors](#credits-&-contributors)
 
 ## Installation
@@ -142,11 +139,6 @@ Include [vue-tel-input-vuetify](/dist/vue-tel-input-vuetify.min.js) in the page.
   | `open` |  | Fires when the flags dropdown opens | |
   | `close` |  | Fires when the flags dropdown closes | |
   | `country-changed` | `Object` | Fires when country changed (even for the first time) | Available from [v2.4.2](https://github.com/EducationLink/vue-tel-input/releases/tag/v2.4.2) |
-
-### Slots
-  | Slot | Description | Notes |
-  | ---- | ----------- | ----- |
-  | `arrow-icon` | Replace the arrow next to the flag with a component of your choice | Available from [v2.4.3](https://github.com/EducationLink/vue-tel-input/releases/tag/v2.4.3) |
 
 ## Credits & Contributors
 
