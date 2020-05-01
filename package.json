@@ -73,7 +73,7 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "homepage": "http://yogakurniawan.github.io/vue-tel-input-vuetify/",
+  "homepage": "https://yogakurniawan.github.io/vue-tel-input-vuetify/",
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
