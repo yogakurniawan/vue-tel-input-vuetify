@@ -1,17 +1,10 @@
-# vue-tel-input
+# vue-tel-input-vuetify
 International Telephone Input with Vue.
-
-[![](https://img.shields.io/npm/dt/vue-tel-input.svg)](https://www.npmjs.com/package/vue-tel-input) [![](https://img.shields.io/github/stars/educationlink/vue-tel-input.svg)](https://github.com/EducationLink/vue-tel-input)
 
 <p align="center">
 <img width="600px" alt="In-action GIF" src="https://thumbs.gfycat.com/EducatedPoliteBluefintuna-size_restricted.gif"/>
 </p>
 
-**Useful Links**
-
-- [Live Demo](https://educationlink.github.io/vue-tel-input/)
-- [Changelog](https://github.com/EducationLink/vue-tel-input/releases)
-- [Documentation for `v2.x.x`](https://github.com/EducationLink/vue-tel-input/blob/master/README-v2.md)
 
 **Table of Contents**
 
@@ -215,11 +208,4 @@ npm install --save-dev @types/vue-tel-input
 - Country Codes data from [intl-tel-input](https://github.com/jackocnr/intl-tel-input/blob/master/src/js/data.js).
 - User's country by [ip2c.org](https://ip2c.org/s), request using [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 
-**Contributors**
-- [mikob](https://github.com/mikob) for super awesome work to [remove the bootstrap dependency](https://github.com/EducationLink/vue-tel-input/pull/13).
-- [kalcifield](https://github.com/kalcifield) for helping make the input [preload with a phone number](https://github.com/EducationLink/vue-tel-input/pull/8).
-- [serbemas](https://github.com/serbemas) for [adding web components support](https://github.com/EducationLink/vue-tel-input/pull/92).
-
-...[more](https://github.com/EducationLink/vue-tel-input/graphs/contributors)
-
-made with &#x2764; by [Steven](https://github.com/iamstevendao).
+made with &#x2764; by [Yoga](https://github.com/yogakurniawan).

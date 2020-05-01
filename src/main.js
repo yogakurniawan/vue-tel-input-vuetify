@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import Vue from 'vue';
+import vuetify from "@/plugins/vuetify";
 import App from './App.vue';
 import VueTelInput from './components/vue-tel-input-vuetify.vue';
 
@@ -10,4 +11,5 @@ Vue.component('vue-tel-input-vuetify', VueTelInput);
 
 new Vue({
   render: h => h(App),
+  vuetify
 }).$mount('#app');

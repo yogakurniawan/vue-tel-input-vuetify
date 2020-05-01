@@ -7,7 +7,7 @@
         style="color: inherit"
         href="https://github.com/EducationLink/vue-tel-input/graphs/contributors">awesome humans</a>.</h2>
       <div style="width: 500px; margin: 20px auto;">
-        <vue-tel-input
+        <vue-tel-input-vuetify
           :preferred-countries="['us', 'gb', 'ua']"
           :valid-characters-only="true"
           @input="onInput"/>
