@@ -13,7 +13,6 @@ International Telephone Input with Vuetify.
   - [vue-cli](#vue-cli)
   - [vuetify](#vuetify)
   - [npm](#npm)
-  - [Browser](#browser)
 - [Usage](#usage)
   - [Props](#props)
   - [Events](#events)
@@ -86,14 +85,6 @@ Use the `vue-tel-input-vuetify` component:
   };
   </script>
   ```
-
-### Browser
-
-Include [vue-tel-input-vuetify](/dist/vue-tel-input-vuetify.min.js) in the page.
-
-```html
-<script src="https://unpkg.com/vue-tel-input-vuetify"></script>
-```
 
 ## Usage
 
