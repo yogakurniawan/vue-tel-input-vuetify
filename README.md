@@ -1,5 +1,5 @@
 # vue-tel-input-vuetify
-International Telephone Input with Vue.
+International Telephone Input with Vuetify.
 
 <p align="center">
 <img width="600px" alt="In-action GIF" src="https://thumbs.gfycat.com/EducatedPoliteBluefintuna-size_restricted.gif"/>
@@ -10,6 +10,8 @@ International Telephone Input with Vue.
 
 - [Getting started](#getting-started)
 - [Installation](#installation)
+  - [vue-cli](#vue-cli)
+  - [vuetify](#vuetify)
   - [npm](#npm)
   - [Browser](#browser)
   - [Use as a custom field of `vue-form-generator`](#use-as-a-custom-field-of-vue-form-generator)
@@ -20,128 +22,81 @@ International Telephone Input with Vue.
 - [Typescript Support](#typescript-support)
 - [Credits & Contributors](#credits-&-contributors)
 
-## Getting started
-- Install the plugin:
-
-  ```
-  npm install vue-tel-input
-  ```
-
-- Add the plugin into your app:
-
-  ```javascript
-  import Vue from 'vue'
-  import VueTelInput from 'vue-tel-input'
-
-  Vue.use(VueTelInput)
-  ```
-
-  [More info on installation](#installation)
-
-- Use the `vue-tel-input` component:
-
-  ```html
-  <template>
-    <vue-tel-input v-model="phone"></vue-tel-input>
-  <template>
-  ```
-
 ## Installation
-### npm
+### vue-cli
+- create new vue project using `vue-cli`:
+
 ```bash
-  npm install vue-tel-input
+  vue create my-app
+  cd my-app
+```
+
+### vuetify
+- install `vuetify` to newly created vue project
+
+```bash
+  vue add vuetify
+```
+
+### npm
+- install `vue-tel-input-vuetify` to newly created vue project
+
+```bash
+  npm install vue-tel-input-vuetify
 ```
 
 Install the plugin into Vue:
 
 ```javascript
-import Vue from 'vue'
-import VueTelInput from 'vue-tel-input'
+  // src/plugins/vuetify.js
 
-Vue.use(VueTelInput, [globalOptions = {}]) // Define default global options here (optional)
+  import Vue from 'vue';
+  import Vuetify from 'vuetify/lib';
+
+  Vue.use(Vuetify);
+
+  export default new Vuetify({
+  });
+```
+
+```javascript
+// src/main.js
+
+import Vue from 'vue';
+import VueTelInput from 'vue-tel-input-vuetify';
+import vuetify from "./plugins/vuetify";
+
+Vue.use(VueTelInputVuetify, {
+  vuetify,
+});
 ```
 > View all available options in [Props](#props).
 
-Or use the component directly:
+Use the `vue-tel-input-vuetify` component:
 
-```html
-<!-- your-component.vue-->
-<template>
-  <vue-tel-input v-model="value"></vue-tel-input>
-</template>
-<script>
-import { VueTelInput } from 'vue-tel-input'
+  ```html
+  <template>
+    <vue-tel-input-vuetify v-model="phone"></vue-tel-input-vuetify>
+  <template>
 
-export default {
-  components: {
-    VueTelInput,
-  },
-};
-</script>
-```
+  <script>
+  export default {
+    data() {
+      return {
+        phone: null
+      }
+    }
+  };
+  </script>
+  ```
 
 ### Browser
 
-Include [vue-tel-input](/dist/vue-tel-input.min.js) in the page.
+Include [vue-tel-input-vuetify](/dist/vue-tel-input-vuetify.min.js) in the page.
 
 ```html
-<script src="https://unpkg.com/vue-tel-input"></script>
+<script src="https://unpkg.com/vue-tel-input-vuetify"></script>
 ```
-
-**If Vue is detected in the Page, the plugin is installed automatically.**
-
-Manually install the plugin into Vue:
-
-```javascript
-Vue.use(VueTelInput)
-```
-
-Or use the component directly:
-
-```javascript
-Vue.component('vue-tel-input', VueTelInput.VueTelInput)
-```
-
-### Use as a custom field of [vue-form-generator](https://github.com/vue-generators/vue-form-generator)
-
-Check out the setup in [CodeSandbox](https://codesandbox.io/s/vue-tel-input-with-vue-form-generator-q56jg).
-
-- Add a component using `vue-form-generator`'s `abstractField` mixin
-  ```html
-    <!-- tel-input.vue -->
-    <template>
-      <vue-tel-input v-model="value"></vue-tel-input>
-    </template>
-
-    <script>
-    import { abstractField } from 'vue-form-generator';
-
-    export default {
-      name: 'TelephoneInput',
-      mixins: [abstractField],
-    };
-    </script>
-  ```
-
-- Register the new field as a global component
-  ```js
-    import Vue from 'vue';
-    import TelInput from '<path>/tel-input.vue';
-
-    Vue.component('field-tel-input', TelInput);
-  ```
-
-- Now it can be used as `tel-input` in schema of `vue-form-generator`
-  ```js
-  var schema: {
-    fields: [{
-        type: "tel-input",
-        label: "Awesome (tel input)",
-        model: "telephone"
-    }]
-  };
-  ```
-Read more on `vue-form-generator`'s [instruction page](https://icebob.gitbooks.io/vueformgenerator/content/fields/custom_fields.html)
 
 ## Usage
 
@@ -192,14 +147,6 @@ Read more on `vue-form-generator`'s [instruction page](https://icebob.gitbooks.i
   | Slot | Description | Notes |
   | ---- | ----------- | ----- |
   | `arrow-icon` | Replace the arrow next to the flag with a component of your choice | Available from [v2.4.3](https://github.com/EducationLink/vue-tel-input/releases/tag/v2.4.3) |
-
-## Typescript Support
-
-If you work with typescript you will need declaration requirements.
-
-```bash
-npm install --save-dev @types/vue-tel-input
-```
 
 ## Credits & Contributors
 

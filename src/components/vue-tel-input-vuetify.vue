@@ -42,7 +42,6 @@
 <script>
 import Vue from 'vue';
 import PhoneNumber from 'awesome-phonenumber';
-import { VSelect, VTextField } from 'vuetify/lib';
 import utils, { getCountry, setCaretPosition } from '../utils';
 
 function getDefault(key) {
@@ -65,10 +64,6 @@ function getParents(node, memo) {
 
 export default {
   name: 'VueTelInputVuetify',
-  components: {
-    VSelect,
-    VTextField,
-  },
   directives: {
     // Click-outside by BosNaufal: https://github.com/BosNaufal/vue-click-outside
     'click-outside': {
@@ -605,6 +600,7 @@ export default {
 li.last-preferred {
   border-bottom: 1px solid #cacaca;
 }
+
 .vti__flag {
   margin-right: 5px;
   margin-left: 5px;
