@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.1.1...v1.1.2) (2020-05-01)
+
+
+### Bug Fixes
+
+* **textfield:** add new prop text-field-label for user custom label ([d0ccae8](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/d0ccae8bc6ff0bb02cabdedd334357bde1215df2)), closes [#1](https://github.com/yogakurniawan/vue-tel-input-vuetify/issues/1)
+
 ## [1.1.1](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.1.0...v1.1.1) (2020-05-01)
 
 
