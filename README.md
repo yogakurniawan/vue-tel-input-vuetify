@@ -2,7 +2,7 @@
 International Telephone Input with Vuetify.
 
 <p align="center">
-<img width="600px" alt="In-action GIF" src="https://media.giphy.com/media/eNe0TdR03G7MMNkFab/giphy.gif"/>
+<img width="600px" alt="International Telephone Input with Vuetify." src="https://media.giphy.com/media/eNe0TdR03G7MMNkFab/giphy.gif"/>
 </p>
 
 
