@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.1.4...v1.1.5) (2020-05-18)
+
+
+### Bug Fixes
+
+* **core:** fix can't import vuetify components ([75e4f0e](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/75e4f0ef09f6232d679605a7acb416311cd52d07))
+
 ## [1.1.4](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.1.3...v1.1.4) (2020-05-18)
 
 
