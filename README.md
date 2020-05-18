@@ -47,12 +47,14 @@ Install the plugin into Vue:
   // src/plugins/vuetify.js
 
   import Vue from 'vue';
-  import Vuetify from 'vuetify/lib';
+  import Vuetify from 'vuetify';
+  import 'vuetify/dist/vuetify.min.css'
 
   Vue.use(Vuetify);
 
   export default new Vuetify({
   });
+
 ```
 
 ```javascript
@@ -65,6 +67,12 @@ import vuetify from "./plugins/vuetify";
 Vue.use(VueTelInputVuetify, {
   vuetify,
 });
+
+new Vue({
+  vuetify,
+  render: (h) => h(App),
+}).$mount("#app");
+
 ```
 > View all available options in [Props](#props).
 
