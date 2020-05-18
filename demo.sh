@@ -6,9 +6,6 @@ set -e
 # build
 npm run demo
 
-# Copy circle CI configuration to prevent running from gh-pages
-cp circle.yml docs
-
 # navigate into the build output directory
 cd docs
 

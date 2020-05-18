@@ -59,7 +59,7 @@ Install the plugin into Vue:
 // src/main.js
 
 import Vue from 'vue';
-import VueTelInput from 'vue-tel-input-vuetify';
+import VueTelInputVuetify from 'vue-tel-input-vuetify';
 import vuetify from "./plugins/vuetify";
 
 Vue.use(VueTelInputVuetify, {
@@ -92,22 +92,43 @@ Use the `vue-tel-input-vuetify` component:
 
   | Property | Type | Default value | Description |
   | -------- | ---- | ------------- | ----------- |
+  | `messages` | `String | Array` | `[]` | Displays a list of messages or message if using a string |
+  | `success-messages` | `String | Array` | `[]` | Puts the input in a success state and passes through custom success messages. |
+  | `error-messages` | `String | Array` | `[]` | Puts the input in an error state and passes through custom error messages. Will be combined with any validations that occur from the rules prop. This field will not trigger validation |
+  | `hint` | `String` | `undefined` | Hint text |
+  | `suffix` | `String` | `undefined` | Displays suffix text |
+  | `prefix` | `String` | `undefined` | Displays prefix text |
+  | `background-color` | `String` | `undefined` | Changes the background-color of the input |
+  | `rules` | `String` | `Array` | Accepts an array of functions that take an input value as an argument and return either true / false or a string with an error message |
+  | `loader-height` | `Number | String` | `2` | Specifies the height of the loader |
+  | `loading` | `String | Boolean` | `false` | Displays linear progress bar. Can either be a String which specifies which color is applied to the progress bar (any material color or theme color - primary, secondary, success, info, warning, error) or a Boolean which uses the component color (set by color prop - if it's supported by the component) or the primary color |
+  | `hide-details` | `String | Boolean` | `undefined` | Hides hint and validation errors. When set to auto messages will be rendered only if there's a message (hint, error message, counter value etc) to display |
+  | `clearable` | `Boolean` | `false` | Add input clear functionality, default icon is Material Icons clear |
+  | `filled` | `Boolean` | `false` | Applies the alternate filled input style |
+  | `full-width` | `Boolean` | `false` | Designates input type as full-width |
+  | `flat` | `Boolean` | `false` | Removes elevation (shadow) added to element when using the solo or solo-inverted props |
+  | `light` | `Boolean` | `false` | Applies the light theme variant to the component. |
+  | `validate-on-blur` | `Boolean` | `false` | Delays validation until blur event |
+  | `outlined` | `Boolean` | `false` | Applies the outlined style to the input |
+  | `persistent-hint` | `Boolean` | `false` | Forces hint to always be visible |
+  | `readonly` | `Boolean` | `false` | Puts input in readonly state |
+  | `error` | `Boolean` | `false` | Puts the input in a manual error state |
+  | `success` | `Boolean` | `false` | Puts the input in a manual success state |
+  | `shaped` | `Boolean` | `false` | Round if outlined and increase border-radius if filled. Must be used with either outlined or filled |
+  | `single-line` | `Boolean` | `false` | Label does not move on focus/dirty |
+  | `rounded` | `Boolean` | `false` | Adds a border radius to the input |
+  | `value` | `any` | `''` | The input's value |
+  | `label` | `String` | `'Enter a Phone Number'` | Native input 'label' attribute |
   | `autocomplete` | `String` | `'on'` | Native input 'autocomplete' attribute |
   | `autofocus` | `Boolean` | `false` | Native input 'autofocus' attribute |
   | `defaultCountry` | `String` | `''` | Default country, will override the country fetched from IP address of user |
   | `disabled` | `Boolean` | `false` | Disable input field |
   | `disabledFetchingCountry` | `Boolean` | `false` | Disable fetching current country based on IP address of user |
-  | `disabledFormatting` | `Boolean` | `false` | Disable formatting the phone number in the input, the formatted result still be accessible by `formattedNumber` returned from `onInput` event |
-  | `dropdownOptions` | `Object` | `{ disabledDialCode: false, tabindex: 0 }` | Options for dropdown, supporting `disabledDialCode` and `tabindex`| 
-  | `dynamicPlaceholder` | `Boolean` | `false` | Placeholder as a sample phone number in the current country, available from [v3.1.1](https://github.com/EducationLink/vue-tel-input/releases/tag/v3.1.1) |
-  | `enabledCountryCode` | `Boolean` | `false` | Enable country code in the input |
-  | `enabledFlags` | `Boolean` | `true` | Enable flags in the input |
   | `ignoredCountries` | `Array` | `[]` | List of countries will NOT be shown on the dropdown. ie `['AU', 'BR']` |
-  | `inputClasses` | `String` &#124; `Array` &#124; `Object` | `''` | Custom classes for the `input` |
   | `inputId` | `String` | `''` | Custom 'id' for the `input` |
   | `inputOptions` | `Object` | `{ showDialCode: false, tabindex: 0 }` | Options for input, supporting `showDialCode` (always show dial code in the input) and `tabindex`|
   | `maxLen` | `Number` | `25` | Native input 'maxlength' attribute |
-  | `mode` | `String` | `''` | Format number to `'international'` (with + dial code) or `'national'` (with 0...), available from [v3.1.1](https://github.com/EducationLink/vue-tel-input/releases/tag/v3.1.1) |
+  | `mode` | `String` | `''` | Format number to `'international'` (with + dial code) or `'national'` (with 0...) |
   | `name` | `String` | `'telephone'` | Native input 'name' attribute |
   | `onlyCountries` | `Array` | `[]` | List of countries will be shown on the dropdown. ie `['AU', 'BR']` |
   | `placeholder` | `String` | `'Enter a phone number'` | Placeholder for the input |
@@ -127,7 +148,7 @@ Use the `vue-tel-input-vuetify` component:
   | `enter` |  | Fires on keyup.enter event | `onEnter` deprecated |
   | `open` |  | Fires when the flags dropdown opens | |
   | `close` |  | Fires when the flags dropdown closes | |
-  | `country-changed` | `Object` | Fires when country changed (even for the first time) | Available from [v2.4.2](https://github.com/EducationLink/vue-tel-input/releases/tag/v2.4.2) |
+  | `country-changed` | `Object` | Fires when country changed (even for the first time) |
 
 ## Credits & Contributors
 

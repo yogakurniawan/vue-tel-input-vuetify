@@ -13,7 +13,6 @@ export function install(Vue, customOptions = {}) {
     ...defaultOptions,
     ...customOptions
   };
-  console.log(vuetifyFramework);
   Vue.use(vuetifyFramework);
   Vue.component("vue-tel-input-vuetify", VueTelInputVuetify);
 }

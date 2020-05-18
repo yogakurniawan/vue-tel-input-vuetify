@@ -1,5 +1,5 @@
 <template>
-  <div class="custom-tel-input">
+  <div :class="['vue-tel-input-vuetify', wrapperClasses]" >
     <div class="country-code">
       <v-select
         v-model="countryCode"
@@ -21,11 +21,38 @@
     <v-text-field
       ref="input"
       type="tel"
+      :messages="messages"
+      :error-messages="errorMessages"
+      :success-messages="successMessages"
+      :hint="hint"
+      :suffix="suffix"
+      :prefix="prefix"
+      :background-color="backgroundColor"
+      :rules="rules"
+      :loader-height="loaderHeight"
+      :loading="loading"
+      :hide-details="hideDetails"
+      :clearable="clearable"
+      :filled="filled"
+      :full-width="fullWidth"
+      :flat="flat"
+      :light="light"
+      :validate-on-blur="validateOnBlur"
+      :outlined="outlined"
+      :persistent-hint="persistentHint"
+      :readonly="readonly"
+      :error="error"
+      :success="success"
+      :shaped="shaped"
+      :single-line="singleLine"
+      :rounded="rounded"
+      :value="value"
+      :label="label"
+      :placeholder="placeholder"
+      :disabled="disabled"
       v-model="phone"
-      :label="textFieldLabel"
       :autofocus="autofocus"
       :name="name"
-      :disabled="disabled"
       :required="required"
       :autocomplete="autocomplete"
       :id="inputId"
@@ -103,11 +130,103 @@ export default {
     },
   },
   props: {
+    messages: {
+      type: [Array, String],
+    },
+    errorMessages: {
+      type: [Array, String],
+    },
+    successMessages: {
+      type: [Array, String],
+    },
+    hint: {
+      type: String,
+    },
+    suffix: {
+      type: String,
+    },
+    prefix: {
+      type: String,
+    },
+    backgroundColor: {
+      type: String,
+    },
+    rules: {
+      type: Array,
+      default: () => [],
+    },
+    loaderHeight: {
+      type: [Number, String],
+      default: 2,
+    },
+    loading: {
+      type: [Boolean, String],
+      default: false,
+    },
+    hideDetails: {
+      type: [Boolean, String],
+    },
+    clearable: {
+      type: Boolean,
+      default: false,
+    },
+    filled: {
+      type: Boolean,
+      default: false,
+    },
+    fullWidth: {
+      type: Boolean,
+      default: false,
+    },
+    flat: {
+      type: Boolean,
+      default: false,
+    },
+    light: {
+      type: Boolean,
+      default: false,
+    },
+    validateOnBlur: {
+      type: Boolean,
+      default: false,
+    },
+    outlined: {
+      type: Boolean,
+      default: false,
+    },
+    persistentHint: {
+      type: Boolean,
+      default: false,
+    },
+    readonly: {
+      type: Boolean,
+      default: false,
+    },
+    error: {
+      type: Boolean,
+      default: false,
+    },
+    success: {
+      type: Boolean,
+      default: false,
+    },
+    shaped: {
+      type: Boolean,
+      default: false,
+    },
+    singleLine: {
+      type: Boolean,
+      default: false,
+    },
+    rounded: {
+      type: Boolean,
+      default: false,
+    },
     value: {
       type: String,
       default: '',
     },
-    textFieldLabel: {
+    label: {
       type: String,
       default: 'Enter a Phone Number',
     },
@@ -122,10 +241,6 @@ export default {
     disabled: {
       type: Boolean,
       default: () => getDefault('disabled'),
-    },
-    disabledFormatting: {
-      type: Boolean,
-      default: () => getDefault('disabledFormatting'),
     },
     mode: {
       type: String,
@@ -148,14 +263,6 @@ export default {
       // Will override the current country of user
       type: String,
       default: () => getDefault('defaultCountry'),
-    },
-    enabledCountryCode: {
-      type: Boolean,
-      default: () => getDefault('enabledCountryCode'),
-    },
-    enabledFlags: {
-      type: Boolean,
-      default: () => getDefault('enabledFlags'),
     },
     preferredCountries: {
       type: Array,
@@ -185,17 +292,9 @@ export default {
       type: [String, Array, Object],
       default: () => getDefault('wrapperClasses'),
     },
-    inputClasses: {
-      type: [String, Array, Object],
-      default: () => getDefault('inputClasses'),
-    },
     inputId: {
       type: String,
       default: () => getDefault('inputId'),
-    },
-    dropdownOptions: {
-      type: Object,
-      default: () => getDefault('dropdownOptions'),
     },
     inputOptions: {
       type: Object,
@@ -208,11 +307,7 @@ export default {
     validCharactersOnly: {
       type: Boolean,
       default: () => getDefault('validCharactersOnly'),
-    },
-    dynamicPlaceholder: {
-      type: Boolean,
-      default: () => getDefault('dynamicPlaceholder'),
-    },
+    }
   },
   data() {
     return {
@@ -228,19 +323,6 @@ export default {
     };
   },
   computed: {
-    parsedPlaceholder() {
-      if (!this.finishMounted) {
-        return '';
-      }
-      if (this.dynamicPlaceholder) {
-        const mode = this.mode || 'international';
-        return PhoneNumber.getExample(
-          this.activeCountry.iso2,
-          'mobile',
-        ).getNumber(mode);
-      }
-      return this.placeholder;
-    },
     parsedMode() {
       if (this.mode) {
         if (!['international', 'national'].includes(this.mode)) {
@@ -395,7 +477,6 @@ export default {
           getCountry()
             .then((res) => {
               this.activeCountry = this.findCountry(res) || this.activeCountry;
-              console.log(this.activeCountry);
             })
             .catch((error) => {
               console.warn(error);
@@ -592,7 +673,7 @@ export default {
 
 <style src="../assets/sprite.css"></style>
 <style lang="scss" scoped>
-.custom-tel-input {
+.vue-tel-input-vuetify {
   display: flex;
   align-items: center;
 }
