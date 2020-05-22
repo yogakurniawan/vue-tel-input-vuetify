@@ -19,6 +19,13 @@ International Telephone Input with Vuetify.
 - [Credits & Contributors](#Credits-&-Contributors)
 
 ## Installation
+
+### Example Repository
+
+You might want to follow and use the basic example usage of this library in this repository [Example](https://github.com/yogakurniawan/vue-tel-input-vuetify-example)
+
+OR try from scratch with below steps
+
 ### vue-cli
 - create new vue project using `vue-cli`:
 
@@ -100,17 +107,17 @@ Use the `vue-tel-input-vuetify` component:
 
   | Property | Type | Default value | Description |
   | -------- | ---- | ------------- | ----------- |
-  | `messages` | `String | Array` | `[]` | Displays a list of messages or message if using a string |
-  | `success-messages` | `String | Array` | `[]` | Puts the input in a success state and passes through custom success messages. |
-  | `error-messages` | `String | Array` | `[]` | Puts the input in an error state and passes through custom error messages. Will be combined with any validations that occur from the rules prop. This field will not trigger validation |
+  | `messages` | `String` &#124; `Array` | `[]` | Displays a list of messages or message if using a string |
+  | `success-messages` | `String` &#124; `Array` | `[]` | Puts the input in a success state and passes through custom success messages. |
+  | `error-messages` | `String` &#124; `Array` | `[]` | Puts the input in an error state and passes through custom error messages. Will be combined with any validations that occur from the rules prop. This field will not trigger validation |
   | `hint` | `String` | `undefined` | Hint text |
   | `suffix` | `String` | `undefined` | Displays suffix text |
   | `prefix` | `String` | `undefined` | Displays prefix text |
   | `background-color` | `String` | `undefined` | Changes the background-color of the input |
   | `rules` | `String` | `Array` | Accepts an array of functions that take an input value as an argument and return either true / false or a string with an error message |
-  | `loader-height` | `Number | String` | `2` | Specifies the height of the loader |
-  | `loading` | `String | Boolean` | `false` | Displays linear progress bar. Can either be a String which specifies which color is applied to the progress bar (any material color or theme color - primary, secondary, success, info, warning, error) or a Boolean which uses the component color (set by color prop - if it's supported by the component) or the primary color |
-  | `hide-details` | `String | Boolean` | `undefined` | Hides hint and validation errors. When set to auto messages will be rendered only if there's a message (hint, error message, counter value etc) to display |
+  | `loader-height` | `Number` &#124; `String` | `2` | Specifies the height of the loader |
+  | `loading` | `String` &#124; `Boolean` | `false` | Displays linear progress bar. Can either be a String which specifies which color is applied to the progress bar (any material color or theme color - primary, secondary, success, info, warning, error) or a Boolean which uses the component color (set by color prop - if it's supported by the component) or the primary color |
+  | `hide-details` | `String` &#124; `Boolean` | `undefined` | Hides hint and validation errors. When set to auto messages will be rendered only if there's a message (hint, error message, counter value etc) to display |
   | `clearable` | `Boolean` | `false` | Add input clear functionality, default icon is Material Icons clear |
   | `filled` | `Boolean` | `false` | Applies the alternate filled input style |
   | `full-width` | `Boolean` | `false` | Designates input type as full-width |
