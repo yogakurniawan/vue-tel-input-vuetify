@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.1.6...v1.1.7) (2020-05-22)
+
+
+### Bug Fixes
+
+* **readme:** update readme ([c31f484](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/c31f4849c758e60df4f8bff03aa00bbe4904e708))
+
 ## [1.1.6](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.1.5...v1.1.6) (2020-05-18)
 
 
