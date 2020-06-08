@@ -5,6 +5,7 @@
         v-model="countryCode"
         @change="onChangeCountryCode"
         :items="sortedCountries"
+        :disabled="disabled"
         item-text="name"
         item-value="dialCode"
         return-object
