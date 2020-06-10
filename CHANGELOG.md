@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.1.7...v1.1.8) (2020-06-10)
+
+
+### Bug Fixes
+
+* **core:** disable country selector ([ad4d78f](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/ad4d78fc2f499506b63e3e94c8b4abf670f41552))
+
 ## [1.1.7](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.1.6...v1.1.7) (2020-05-22)
 
 
