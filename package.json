@@ -18,7 +18,8 @@
   "module": "dist/vue-tel-input-vuetify.esm.js",
   "unpkg": "dist/vue-tel-input-vuetify.min.js",
   "files": [
-    "dist/"
+    "dist/",
+    "src/"
   ],
   "dependencies": {
     "awesome-phonenumber": "^2.15.0",
