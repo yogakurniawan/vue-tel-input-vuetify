@@ -1,4 +1,5 @@
 import babel from 'rollup-plugin-babel';
+import copy from 'rollup-plugin-copy';
 import resolve from 'rollup-plugin-node-resolve';
 import vue from 'rollup-plugin-vue';
 import cjs from 'rollup-plugin-commonjs';
@@ -9,7 +10,7 @@ import analyze from 'rollup-plugin-analyzer';
 const config = require('../package.json');
 
 export default {
-  input: 'src/index.js',
+  input: 'src/lib/index.js',
   plugins: [
     resolve({
       mainFields: ['module', 'jsnext:main', 'main', 'browser'],
@@ -28,6 +29,14 @@ export default {
     }),
     postcss(),
     analyze(),
+    copy({
+      targets: [
+        {
+          src: 'src/lib/**/*',
+          dest: 'lib'
+        },
+      ]
+    }),
   ],
   watch: {
     include: 'src/**',

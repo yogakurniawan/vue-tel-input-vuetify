@@ -7,15 +7,13 @@
 </template>
 
 <script>
-import Example from './components/Example';
+import Example from './components/Example.vue';
 
 export default {
   name: 'App',
-
   components: {
     Example,
   },
-
   data: () => ({
     //
   }),

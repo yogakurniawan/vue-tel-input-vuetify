@@ -6,7 +6,7 @@
   "scripts": {
     "build": "set NODE_ENV=production && npm run build:browser && npm run build:es && npm run build:umd",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint",
+    "lint": "vue-cli-service lint --fix",
     "build:browser": "rollup --config build/rollup.config.browser.js",
     "build:es": "rollup --config build/rollup.config.es.js",
     "build:umd": "rollup --config build/rollup.config.umd.js",
@@ -19,7 +19,8 @@
   "unpkg": "dist/vue-tel-input-vuetify.min.js",
   "files": [
     "dist/",
-    "src/"
+    "src/",
+    "lib/"
   ],
   "dependencies": {
     "awesome-phonenumber": "^2.15.0",
@@ -51,6 +52,7 @@
     "rollup-plugin-analyzer": "^3.0.0",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-css-only": "^1.0.0",
     "rollup-plugin-node-resolve": "^4.2.3",
     "rollup-plugin-postcss": "^2.0.3",

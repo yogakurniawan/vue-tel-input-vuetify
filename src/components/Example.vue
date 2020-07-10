@@ -33,15 +33,20 @@
 </template>
 
 <script>
+import VueTelInputVuetify from '../lib/vue-tel-input-vuetify.vue';
+
 export default {
-  name: "Example",
+  name: 'Example',
+  components: {
+    VueTelInputVuetify,
+  },
   data() {
     return {
       phone: {
-        number: "",
+        number: '',
         valid: false,
-        country: undefined
-      }
+        country: undefined,
+      },
     };
   },
   methods: {
@@ -49,7 +54,7 @@ export default {
       this.phone.number = number.international;
       this.phone.valid = valid;
       this.phone.country = country && country.name;
-    }
-  }
+    },
+  },
 };
 </script>
