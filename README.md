@@ -50,6 +50,40 @@ OR try from scratch with below steps
 
 Install the plugin into Vue:
 
+With vuetify loader:
+
+```javascript
+  // src/plugins/vuetify.js
+
+  import Vue from 'vue';
+  import Vuetify from 'vuetify/lib';
+
+  Vue.use(Vuetify);
+
+  export default new Vuetify({
+  });
+
+```
+
+```javascript
+// src/VueComponent.js
+
+import VueTelInputVuetify from "vue-tel-input-vuetify/src/components/vue-tel-input-vuetify"
+
+<template>
+  <vue-tel-input-vuetify></vue-tel-input-vuetify>
+</template>
+
+export default {
+  components: {
+    VueTelInputVuetify,
+  },
+};
+
+```
+
+Without vuetify loader:
+
 ```javascript
   // src/plugins/vuetify.js
 
@@ -68,7 +102,7 @@ Install the plugin into Vue:
 // src/main.js
 
 import Vue from 'vue';
-import VueTelInputVuetify from "vue-tel-input-vuetify/src/components/vue-tel-input-vuetify"
+import VueTelInputVuetify from "vue-tel-input-vuetify";
 import vuetify from "./plugins/vuetify";
 
 Vue.use(VueTelInputVuetify, {
@@ -81,6 +115,7 @@ new Vue({
 }).$mount("#app");
 
 ```
+
 > View all available options in [Props](#props).
 
 Use the `vue-tel-input-vuetify` component:
