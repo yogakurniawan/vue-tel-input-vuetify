@@ -68,7 +68,7 @@ Install the plugin into Vue:
 // src/main.js
 
 import Vue from 'vue';
-import VueTelInputVuetify from 'vue-tel-input-vuetify';
+import VueTelInputVuetify from "vue-tel-input-vuetify/src/components/vue-tel-input-vuetify"
 import vuetify from "./plugins/vuetify";
 
 Vue.use(VueTelInputVuetify, {
