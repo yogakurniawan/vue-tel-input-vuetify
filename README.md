@@ -83,8 +83,6 @@ export default {
 ```
 
 ```javascript
-//src/main.js
-
 // src/main.js
 
 import Vue from 'vue';
