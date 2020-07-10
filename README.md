@@ -82,6 +82,21 @@ export default {
 
 ```
 
+```javascript
+//src/main.js
+
+// src/main.js
+
+import Vue from 'vue';
+import vuetify from "@/plugins/vuetify";
+
+new Vue({
+  vuetify,
+  render: (h) => h(App),
+}).$mount("#app");
+
+```
+
 Without vuetify loader:
 
 ```javascript
