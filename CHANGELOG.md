@@ -1,3 +1,10 @@
+## [1.1.10](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.1.9...v1.1.10) (2020-07-10)
+
+
+### Bug Fixes
+
+* **core:** support vuetify loader ([072910f](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/072910f1f0188426f6a4bf91f45dd9653165ce2f))
+
 ## [1.1.9](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.1.8...v1.1.9) (2020-07-10)
 
 
