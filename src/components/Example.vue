@@ -3,7 +3,7 @@
     <v-row justify="center">
       <v-col cols="6">
         <vue-tel-input-vuetify
-          :preferred-countries="['id', 'gb', 'ua']"
+          :preferred-countries="['id', 'gb', 'ua', 'us']"
           :valid-characters-only="true"
           @input="onInput"
         />
