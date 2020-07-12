@@ -10,7 +10,7 @@ import analyze from 'rollup-plugin-analyzer';
 const config = require('../package.json');
 
 export default {
-  input: 'src/lib/index.js',
+  input: 'src/lib/plugin.js',
   plugins: [
     resolve({
       mainFields: ['module', 'jsnext:main', 'main', 'browser'],
