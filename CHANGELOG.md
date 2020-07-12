@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.0...v1.2.1) (2020-07-12)
+
+
+### Bug Fixes
+
+* **lib:** simplify component import from lib ([83bb59e](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/83bb59e8c122607d89f345348d8f9139f32439ef))
+
 # [1.2.0](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.1.10...v1.2.0) (2020-07-12)
 
 
