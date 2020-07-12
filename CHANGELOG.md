@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.1.10...v1.2.0) (2020-07-12)
+
+
+### Features
+
+* **textfield:** use v-text-field slots from the outside component ([c1a5459](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/c1a54594cf86bd8c7f3d32d269e7e9c06591c303))
+
 ## [1.1.10](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.1.9...v1.1.10) (2020-07-10)
 
 
