@@ -63,7 +63,29 @@
       @blur="onBlur"
       @keyup.enter="onEnter"
       @keyup.space="onSpace"
-    ></v-text-field>
+    >
+      <template #append>
+        <slot name="append"/>
+      </template>
+      <template #append-outer>
+        <slot name="append-outer"/>
+      </template>
+      <template #label>
+        <slot name="label"/>
+      </template>
+      <template #message="{ key, message }">
+        <slot name="label" v-bind="{ key, message }"/>
+      </template>
+      <template #prepend>
+        <slot name="prepend"/>
+      </template>
+      <template #prepend-inner>
+        <slot name="prepend-inner"/>
+      </template>
+      <template #progress>
+        <slot name="progress"/>
+      </template>
+    </v-text-field>
   </div>
 </template>
 
