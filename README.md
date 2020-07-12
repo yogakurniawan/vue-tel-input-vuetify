@@ -68,7 +68,7 @@ With vuetify loader:
 ```javascript
 // src/VueComponent.js
 
-import VueTelInputVuetify from "vue-tel-input-vuetify/lib/vue-tel-input-vuetify.vue"
+import VueTelInputVuetify from "vue-tel-input-vuetify/lib"
 
 <template>
   <vue-tel-input-vuetify></vue-tel-input-vuetify>
