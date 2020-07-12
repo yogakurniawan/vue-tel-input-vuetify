@@ -997,6 +997,7 @@ function setCaretPosition(ctrl, pos) {
 }
 var defaultOptions = {
   placeholder: 'Enter a phone number',
+  label: 'Enter a Phone Number',
   disabledFetchingCountry: false,
   disabled: false,
   disabledFormatting: false,
