@@ -694,22 +694,22 @@ export default {
 </script>
 
 <style src="./sprite.css"></style>
-<style lang="scss" scoped>
+<style lang="scss">
 .vue-tel-input-vuetify {
   display: flex;
   align-items: center;
-}
 
-.country-code {
-  width: 75px;
-}
+  .country-code {
+    width: 75px;
+  }
 
-li.last-preferred {
-  border-bottom: 1px solid #cacaca;
-}
+  li.last-preferred {
+    border-bottom: 1px solid #cacaca;
+  }
 
-.vti__flag {
-  margin-right: 5px;
-  margin-left: 5px;
+  .vti__flag {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
 }
 </style>
