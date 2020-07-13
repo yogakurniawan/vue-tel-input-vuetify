@@ -1,3 +1,3 @@
-import VueTelInputVuetify from './vue-tel-input-vuetify.vue';
+import plugin from './plugin';
 
-export default VueTelInputVuetify;
+export default plugin;
