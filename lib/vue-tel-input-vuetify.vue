@@ -250,7 +250,7 @@ export default {
     },
     label: {
       type: String,
-      default: 'Enter a Phone Number',
+      default: () => getDefault('label'),
     },
     placeholder: {
       type: String,
