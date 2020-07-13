@@ -24,7 +24,8 @@
   ],
   "dependencies": {
     "awesome-phonenumber": "^2.15.0",
-    "vuetify": "^2.2.11"
+    "vuetify": "^2.2.11",
+    "whatwg-fetch": "^3.2.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
