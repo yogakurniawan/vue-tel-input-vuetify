@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.3...v1.2.4) (2020-07-13)
+
+
+### Bug Fixes
+
+* **lib:** export plugin instead of component ([a106fff](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/a106fff58e6f93d5b5e5ddc1503848bb1dc5111c))
+
 ## [1.2.3](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.2...v1.2.3) (2020-07-12)
 
 
