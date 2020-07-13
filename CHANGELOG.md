@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.4...v1.2.5) (2020-07-13)
+
+
+### Bug Fixes
+
+* **core:** add polyfill for fetch ([34f9f6a](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/34f9f6a9914b1a366e053a0a045b3d6ee6efa829))
+
 ## [1.2.4](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.3...v1.2.4) (2020-07-13)
 
 
