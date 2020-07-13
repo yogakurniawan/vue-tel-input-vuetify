@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.5...v1.2.6) (2020-07-13)
+
+
+### Bug Fixes
+
+* **lib:** fix default label ([333e449](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/333e449f61920a8f128948bfc5fc63f7ce1120c7))
+
 ## [1.2.5](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.4...v1.2.5) (2020-07-13)
 
 
