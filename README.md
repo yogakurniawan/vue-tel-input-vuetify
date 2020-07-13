@@ -95,6 +95,15 @@ new Vue({
 Without vuetify loader:
 
 ```javascript
+  // vue.config.js
+
+  "transpileDependencies": [
+    "vuetify",
+    "vue-tel-input-vuetify"
+  ]
+```
+
+```javascript
   // src/plugins/vuetify.js
 
   import Vue from 'vue';
