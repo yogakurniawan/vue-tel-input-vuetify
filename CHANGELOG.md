@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.2...v1.2.3) (2020-07-12)
+
+
+### Bug Fixes
+
+* **core:** add label in plugin options ([7cfa111](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/7cfa1112dfd4dcada74de5fe1f83846f47703271)), closes [#10](https://github.com/yogakurniawan/vue-tel-input-vuetify/issues/10)
+
 ## [1.2.2](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.1...v1.2.2) (2020-07-12)
 
 
