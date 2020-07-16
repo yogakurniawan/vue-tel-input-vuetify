@@ -1,3 +1,10 @@
+## [1.2.8](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.7...v1.2.8) (2020-07-16)
+
+
+### Bug Fixes
+
+* **lib:** add focus event and other important events ([bcc9b7e](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/bcc9b7ec0fd0796082fe8f2cd9d3d8a35183b7d1)), closes [#17](https://github.com/yogakurniawan/vue-tel-input-vuetify/issues/17)
+
 ## [1.2.7](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.6...v1.2.7) (2020-07-13)
 
 
