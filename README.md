@@ -213,6 +213,13 @@ Use the `vue-tel-input-vuetify` component:
   | `input` | `String`, `Object` | Fires when the input changes with the argument is the object includes `{ number, isValid, country }` | `onInput` deprecated |
   | `validate` | `Object` | Fires when the correctness of the phone number changes (from `true` to `false` or vice-versa) and when the component is mounted `{ number, isValid, country }` | `onValidate` deprecated |
   | `blur` |  | Fires on blur event | `onBlur` deprecated |
+  | `change` |  | Emitted when the input is changed by user interaction |
+  | `click` |  | Emitted when input is clicked |
+  | `focus` |  | Emitted when component is focused |
+  | `keydown` |  | Emitted when any key is pressed |
+  | `mousedown` |  | Emitted when click is pressed |
+  | `mouseup` |  | Emitted when click is released |
+  | `blur` |  | Fires on blur event | `onBlur` deprecated |
   | `space` |  | Fires on keyup.space event | `onSpace` deprecated |
   | `enter` |  | Fires on keyup.enter event | `onEnter` deprecated |
   | `open` |  | Fires when the flags dropdown opens | |

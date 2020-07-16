@@ -61,6 +61,12 @@
       :tabindex="inputOptions && inputOptions.tabindex ? inputOptions.tabindex : 0"
       @input="onInput"
       @blur="onBlur"
+      @focus="onFocus"
+      @click="onClick"
+      @change="onChange"
+      @mousedown="onMouseDown"
+      @mouseup="onMouseUp"
+      @keydown="onKeyDown"
       @keyup.enter="onEnter"
       @keyup.space="onSpace"
     >
@@ -595,6 +601,24 @@ export default {
     onBlur() {
       this.$emit('blur');
       this.$emit('onBlur'); // Deprecated
+    },
+    onFocus(event) {
+      this.$emit('focus', event);
+    },
+    onClick(event) {
+      this.$emit('click', event);
+    },
+    onChange(value) {
+      this.$emit('change', value);
+    },
+    onMouseUp(event) {
+      this.$emit('mouseup', event);
+    },
+    onMouseDown(event) {
+      this.$emit('mousedown', event);
+    },
+    onKeyDown(event) {
+      this.$emit('keydown', event);
     },
     onEnter() {
       this.$emit('enter');
