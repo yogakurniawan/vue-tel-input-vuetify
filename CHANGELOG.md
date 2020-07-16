@@ -1,3 +1,10 @@
+## [1.2.7](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.6...v1.2.7) (2020-07-13)
+
+
+### Bug Fixes
+
+* **lib:** replace js scoped css to class scoped css ([8e6ab94](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/8e6ab949b625af6112481cec9502b31dba79b5c6))
+
 ## [1.2.6](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.5...v1.2.6) (2020-07-13)
 
 
