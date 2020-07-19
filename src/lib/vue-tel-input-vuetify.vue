@@ -2,6 +2,7 @@
   <div :class="['vue-tel-input-vuetify', wrapperClasses]">
     <div class="country-code">
       <v-select
+        :label="selectLabel"
         v-model="countryCode"
         @change="onChangeCountryCode"
         :items="sortedCountries"
@@ -257,6 +258,10 @@ export default {
     label: {
       type: String,
       default: () => getDefault('label'),
+    },
+    selectLabel: {
+      type: String,
+      default: '',
     },
     placeholder: {
       type: String,
