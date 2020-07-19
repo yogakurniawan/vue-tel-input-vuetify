@@ -188,6 +188,7 @@ Use the `vue-tel-input-vuetify` component:
   | `rounded` | `Boolean` | `false` | Adds a border radius to the input |
   | `value` | `any` | `''` | The input's value |
   | `label` | `String` | `'Enter a Phone Number'` | Native input 'label' attribute |
+  | `selectLabel` | `String` | `''` | Country selector 'label' attribute |
   | `autocomplete` | `String` | `'on'` | Native input 'autocomplete' attribute |
   | `autofocus` | `Boolean` | `false` | Native input 'autofocus' attribute |
   | `defaultCountry` | `String` | `''` | Default country, will override the country fetched from IP address of user |
