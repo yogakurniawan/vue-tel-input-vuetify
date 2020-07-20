@@ -1,3 +1,10 @@
+## [1.2.9](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.8...v1.2.9) (2020-07-20)
+
+
+### Bug Fixes
+
+* **component:** prop for country selector 'label' attribute ([1aeffe9](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/1aeffe95fd87eb65b933789f3c3d516728a623d3))
+
 ## [1.2.8](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.7...v1.2.8) (2020-07-16)
 
 
