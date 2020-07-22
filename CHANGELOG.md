@@ -1,3 +1,10 @@
+## [1.2.10](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.9...v1.2.10) (2020-07-22)
+
+
+### Bug Fixes
+
+* **component:** fix missing margin between flag and country ([dc1ec7b](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/dc1ec7be6d7ffde5d7f3e634d2c664e37a22c985)), closes [#18](https://github.com/yogakurniawan/vue-tel-input-vuetify/issues/18)
+
 ## [1.2.9](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.8...v1.2.9) (2020-07-20)
 
 
