@@ -15,8 +15,8 @@
           <div :class="activeCountry.iso2.toLowerCase()" class="vti__flag" />
         </template>
         <template v-slot:item="data">
-          <div :class="data.item.iso2.toLowerCase()" class="vti__flag" />
-          {{ data.item.name }} {{ `+${data.item.dialCode}` }}
+          <span :class="data.item.iso2.toLowerCase()" class="vti__flag" />
+          <span>{{ data.item.name }} {{ `+${data.item.dialCode}` }}</span>
         </template>
       </v-select>
     </div>
@@ -724,6 +724,10 @@ export default {
 
 <style src="./sprite.css"></style>
 <style lang="scss">
+.vti__flag {
+  margin-right: 8px;
+}
+
 .vue-tel-input-vuetify {
   display: flex;
   align-items: center;
@@ -736,9 +740,10 @@ export default {
     border-bottom: 1px solid #cacaca;
   }
 
-  .vti__flag {
-    margin-right: 5px;
-    margin-left: 5px;
+  .v-select__selections {
+    .vti__flag {
+      margin-left: 18px;
+    }
   }
 }
 </style>
