@@ -178,6 +178,7 @@ Use the `vue-tel-input-vuetify` component:
   | `flat` | `Boolean` | `false` | Removes elevation (shadow) added to element when using the solo or solo-inverted props |
   | `light` | `Boolean` | `false` | Applies the light theme variant to the component. |
   | `validate-on-blur` | `Boolean` | `false` | Delays validation until blur event |
+  | `dense` | `Boolean` | `false` | Reduces the input height |
   | `outlined` | `Boolean` | `false` | Applies the outlined style to the input |
   | `persistent-hint` | `Boolean` | `false` | Forces hint to always be visible |
   | `readonly` | `Boolean` | `false` | Puts input in readonly state |

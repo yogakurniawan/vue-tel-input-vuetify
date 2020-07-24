@@ -7,6 +7,8 @@
         @change="onChangeCountryCode"
         :items="sortedCountries"
         :disabled="disabled"
+        :outlined="outlined"
+        :dense="dense"
         item-text="name"
         item-value="dialCode"
         return-object
@@ -41,6 +43,7 @@
       :light="light"
       :validate-on-blur="validateOnBlur"
       :outlined="outlined"
+      :dense="dense"
       :persistent-hint="persistentHint"
       :readonly="readonly"
       :error="error"
@@ -220,6 +223,10 @@ export default {
       default: false,
     },
     outlined: {
+      type: Boolean,
+      default: false,
+    },
+    dense: {
       type: Boolean,
       default: false,
     },
@@ -740,9 +747,20 @@ export default {
     border-bottom: 1px solid #cacaca;
   }
 
-  .v-select__selections {
-    .vti__flag {
-      margin-left: 18px;
+  .v-text-field {
+    .v-select__selections {
+      position: relative;
+      .vti__flag {
+        position: absolute;
+        margin-left: 18px;
+      }
+    }
+    &--outlined {
+      .v-select__selections {
+        .vti__flag {
+          margin-left: auto;
+        }
+      }
     }
   }
 }

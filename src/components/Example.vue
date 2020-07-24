@@ -3,8 +3,10 @@
     <v-row justify="center">
       <v-col cols="6">
         <vue-tel-input-vuetify
+          outlined
           :preferred-countries="['id', 'gb', 'ua', 'us']"
           :valid-characters-only="true"
+          select-label="Code"
           @input="onInput"
         />
       </v-col>
