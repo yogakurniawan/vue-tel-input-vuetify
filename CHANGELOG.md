@@ -1,3 +1,10 @@
+## [1.2.11](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.10...v1.2.11) (2020-07-24)
+
+
+### Bug Fixes
+
+* **component:** add dense and outlined props ([a2f43b4](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/a2f43b439697fb235893a3ab9dea842d03140673)), closes [#21](https://github.com/yogakurniawan/vue-tel-input-vuetify/issues/21)
+
 ## [1.2.10](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.9...v1.2.10) (2020-07-22)
 
 
