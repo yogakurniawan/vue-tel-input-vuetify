@@ -1,3 +1,10 @@
+## [1.2.12](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.11...v1.2.12) (2020-07-28)
+
+
+### Bug Fixes
+
+* **component:** fix issue switching countries ([bf6e26e](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/bf6e26e36e63b88d5594ffb092b7ad5860b3e824)), closes [#22](https://github.com/yogakurniawan/vue-tel-input-vuetify/issues/22)
+
 ## [1.2.11](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.10...v1.2.11) (2020-07-24)
 
 
