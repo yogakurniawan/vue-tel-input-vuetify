@@ -1,3 +1,10 @@
+## [1.2.13](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.12...v1.2.13) (2020-08-26)
+
+
+### Bug Fixes
+
+* **lib:** error when applying function "reset" of v-form ([30cdf78](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/30cdf78364526dd3ce929997d5c59dfd4f83fba6))
+
 ## [1.2.12](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.11...v1.2.12) (2020-07-28)
 
 
