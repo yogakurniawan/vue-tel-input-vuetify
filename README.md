@@ -205,7 +205,6 @@ Use the `vue-tel-input-vuetify` component:
   | `placeholder` | `String` | `'Enter a phone number'` | Placeholder for the input |
   | `preferredCountries` | `Array` | `[]` | Preferred countries list, will be on top of the dropdown. ie `['AU', 'BR']` |
   | `required` | `Boolean` | `false` | Required property for HTML5 required attribute |
-  | `validCharactersOnly` | `Boolean` | `false` | Only allow valid characters in a phone number (will also verify in `mounted`, so phone number with invalid characters will be shown as an empty string) |
   | `wrapperClasses` | `String` &#124; `Array` &#124; `Object` | `''` | Custom classes for the wrapper |
 
 ### Events
