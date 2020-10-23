@@ -393,7 +393,7 @@ export default {
       return [...preferredCountries, ...this.filteredCountries];
     },
     phoneObject() {
-      const result = PhoneNumber(this.phone || "", this.activeCountry.iso2).toJSON();
+      const result = PhoneNumber(this.phone || '', this.activeCountry.iso2).toJSON();
       Object.assign(result, {
         isValid: result.valid,
         country: this.activeCountry,
@@ -451,6 +451,8 @@ export default {
           setCaretPosition(this.$refs.input, this.cursorPosition);
         });
       }
+
+      this.$emit('input', this.phoneText, this.phoneObject);
     },
     activeCountry(value) {
       if (value && value.iso2) {
@@ -516,7 +518,9 @@ export default {
         if (!this.disabledFetchingCountry) {
           getCountry()
             .then((res) => {
-              this.activeCountry = this.findCountry(res) || this.activeCountry;
+              if (this.phone === '') {
+                this.activeCountry = this.findCountry(res) || this.activeCountry;
+              }
             })
             .catch((error) => {
               console.warn(error);

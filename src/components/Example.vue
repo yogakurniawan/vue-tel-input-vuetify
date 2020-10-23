@@ -3,7 +3,7 @@
     <v-row justify="center">
       <v-col cols="6">
         <vue-tel-input-vuetify
-          outlined
+          v-model="myPhone"
           :preferred-countries="['id', 'gb', 'ua', 'us']"
           :valid-characters-only="true"
           select-label="Code"
@@ -31,6 +31,11 @@
         </div>
       </v-col>
     </v-row>
+     <v-row justify="center">
+      <v-col cols="6">
+        <v-btn @click="myPhone = '+503 7703 4643'">Set phone</v-btn>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -44,6 +49,7 @@ export default {
   },
   data() {
     return {
+      myPhone: '',
       phone: {
         number: '',
         valid: false,
