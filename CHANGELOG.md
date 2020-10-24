@@ -1,3 +1,10 @@
+## [1.2.14](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.13...v1.2.14) (2020-10-24)
+
+
+### Bug Fixes
+
+* **lib:** add style props to the CountryCode v-select ([50c6fe3](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/50c6fe36ca1ccc5a7a6841e696e1824e0b879376))
+
 ## [1.2.13](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.12...v1.2.13) (2020-08-26)
 
 
