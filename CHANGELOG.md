@@ -1,3 +1,10 @@
+## [1.2.15](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.14...v1.2.15) (2020-10-24)
+
+
+### Bug Fixes
+
+* **lib:** return input event on v-model value change ([e16482b](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/e16482bfb599793a4c54e2a2d50955f6163f320e))
+
 ## [1.2.14](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.13...v1.2.14) (2020-10-24)
 
 
