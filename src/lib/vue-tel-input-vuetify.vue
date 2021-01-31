@@ -16,7 +16,7 @@
         :background-color="backgroundColor"
         :dense="dense"
         item-text="name"
-        item-value="dialCode"
+        item-value="iso2"
         return-object
       >
         <template v-slot:selection>
