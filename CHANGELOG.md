@@ -1,3 +1,10 @@
+## [1.2.16](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.15...v1.2.16) (2021-02-03)
+
+
+### Bug Fixes
+
+* **core:** update item-value on v-select ([a9f2b40](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/a9f2b403eeaf205049a6c69038c61cbed7534e96))
+
 ## [1.2.15](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.14...v1.2.15) (2020-10-24)
 
 
