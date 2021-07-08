@@ -110,11 +110,7 @@ import PhoneNumber from 'awesome-phonenumber';
 import utils, { getCountry, setCaretPosition } from './utils';
 
 function getDefault(key) {
-  const value = utils.options[key];
-  if (typeof value === 'undefined') {
-    return utils.options[key];
-  }
-  return value;
+  return utils.options[key];
 }
 
 // Polyfill for Event.path in IE 11: https://stackoverflow.com/a/46093727
