@@ -15,6 +15,7 @@
         :rounded="rounded"
         :background-color="backgroundColor"
         :dense="dense"
+        :menu-props="menuProps"
         item-text="name"
         item-value="iso2"
         return-object
@@ -271,6 +272,10 @@ export default {
     selectLabel: {
       type: String,
       default: '',
+    },
+    menuProps: {
+      type: [String, Array, Object],
+      default: () => {},
     },
     placeholder: {
       type: String,
