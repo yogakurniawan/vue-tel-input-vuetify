@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.17...v1.3.0) (2021-07-08)
+
+
+### Features
+
+* **lib:** adding menu-props to v-select ([66fccb3](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/66fccb3161f707d9e2a275e0e9751ccdd003931a)), closes [#50](https://github.com/yogakurniawan/vue-tel-input-vuetify/issues/50)
+
 ## [1.2.17](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.16...v1.2.17) (2021-07-08)
 
 
