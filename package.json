@@ -1,6 +1,6 @@
 {
   "name": "vue-tel-input-vuetify",
-  "version": "1.2.16",
+  "version": "1.2.17",
   "description": "International Telephone Input with Vuetify",
   "author": "Yoga Kurniawan <yogaygk@gmail.com>",
   "scripts": {

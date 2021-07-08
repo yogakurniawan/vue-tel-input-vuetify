@@ -1,3 +1,10 @@
+## [1.2.17](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.16...v1.2.17) (2021-07-08)
+
+
+### Bug Fixes
+
+* **lib:** remove redundant code ([e4735ea](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/e4735ea960a9a160549cf8a5f4c87ab0f682ba72))
+
 ## [1.2.16](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.15...v1.2.16) (2021-02-03)
 
 
