@@ -2,8 +2,9 @@
   <div :class="['vue-tel-input-vuetify', wrapperClasses]">
     <div class="country-code">
       <v-select
-        :label="selectLabel"
         v-model="countryCode"
+        :class="selectClasses"
+        :label="selectLabel"
         @change="onChangeCountryCode"
         :items="sortedCountries"
         :disabled="disabled"
@@ -16,6 +17,7 @@
         :background-color="backgroundColor"
         :dense="dense"
         :menu-props="menuProps"
+        :height="inputHeight"
         item-text="name"
         item-value="iso2"
         return-object
@@ -32,6 +34,7 @@
     <v-text-field
       ref="input"
       type="tel"
+      :class="textFieldClasses"
       :messages="messages"
       :error-messages="errorMessages"
       :success-messages="successMessages"
@@ -70,6 +73,7 @@
       :id="inputId"
       :maxlength="maxLen"
       :tabindex="inputOptions && inputOptions.tabindex ? inputOptions.tabindex : 0"
+      :height="inputHeight"
       @input="onInput"
       @blur="onBlur"
       @focus="onFocus"
@@ -261,6 +265,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    inputHeight: {
+      type: String,
+      default: '',
+    },
     value: {
       type: String,
       default: '',
@@ -338,6 +346,14 @@ export default {
     wrapperClasses: {
       type: [String, Array, Object],
       default: () => getDefault('wrapperClasses'),
+    },
+    selectClasses: {
+      type: [String, Array, Object],
+      default: () => '',
+    },
+    inputClasses: {
+      type: [String, Array, Object],
+      default: () => '',
     },
     inputId: {
       type: String,
