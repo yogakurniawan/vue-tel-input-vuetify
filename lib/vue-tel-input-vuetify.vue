@@ -348,6 +348,10 @@ export default {
       type: [String, Array, Object],
       default: () => getDefault('wrapperClasses'),
     },
+    textFieldClasses: {
+      type: [String, Array, Object],
+      default: () => '',
+    },
     selectClasses: {
       type: [String, Array, Object],
       default: () => '',
