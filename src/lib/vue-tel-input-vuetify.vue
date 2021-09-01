@@ -12,6 +12,7 @@
         :filled="filled"
         :flat="flat"
         :light="light"
+        :readonly="readonly"
         :shaped="shaped"
         :rounded="rounded"
         :background-color="backgroundColor"
