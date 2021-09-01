@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.3.0...v1.4.0) (2021-09-01)
+
+
+### Features
+
+* **lib:** add new props ([8c4e6bc](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/8c4e6bc36e17b361fdf98b10ebfe1bc36e927ee6))
+
 # [1.3.0](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.2.17...v1.3.0) (2021-07-08)
 
 
