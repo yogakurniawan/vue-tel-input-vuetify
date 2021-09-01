@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.4.0...v1.4.1) (2021-09-01)
+
+
+### Bug Fixes
+
+* **lib:** fix undefined variable ([8b592a7](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/8b592a79d9c5ede64d03cc3c79818527c056faa4))
+
 # [1.4.0](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.3.0...v1.4.0) (2021-09-01)
 
 
