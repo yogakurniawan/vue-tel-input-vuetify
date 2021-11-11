@@ -142,7 +142,7 @@ Use the `vue-tel-input-vuetify` component:
   ```html
   <template>
     <vue-tel-input-vuetify v-model="phone"></vue-tel-input-vuetify>
-  <template>
+  </template>
 
   <script>
   export default {
