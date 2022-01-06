@@ -12,6 +12,7 @@
         :filled="filled"
         :flat="flat"
         :light="light"
+        :dark="dark"
         :readonly="readonly"
         :shaped="shaped"
         :rounded="rounded"
@@ -52,6 +53,7 @@
       :full-width="fullWidth"
       :flat="flat"
       :light="light"
+      :dark="dark"
       :validate-on-blur="validateOnBlur"
       :outlined="outlined"
       :dense="dense"
@@ -224,6 +226,10 @@ export default {
       default: false,
     },
     light: {
+      type: Boolean,
+      default: false,
+    },
+    dark: {
       type: Boolean,
       default: false,
     },
