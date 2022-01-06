@@ -69,6 +69,7 @@
       :label="label"
       :disabled="disabled"
       :placeholder="placeholder"
+      :persistent-placeholder="persistentPlaceholder"
       v-model="phone"
       :autofocus="autofocus"
       :name="name"
@@ -300,6 +301,10 @@ export default {
     placeholder: {
       type: String,
       default: () => getDefault('placeholder'),
+    },
+    persistentPlaceholder: {
+      type: Boolean,
+      default: false,
     },
     disabledFetchingCountry: {
       type: Boolean,
@@ -773,9 +778,8 @@ export default {
 
 .vue-tel-input-vuetify {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  
+  align-items: center;
+
   .country-code {
     width: 75px;
   }

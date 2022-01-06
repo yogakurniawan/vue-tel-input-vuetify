@@ -3,6 +3,7 @@
     <div class="country-code">
       <v-select
         v-model="countryCode"
+        :append-icon="appendIcon"
         :class="selectClasses"
         :label="selectLabel"
         @change="onChangeCountryCode"
@@ -190,6 +191,10 @@ export default {
     },
     prefix: {
       type: String,
+    },
+    appendIcon: {
+      type: String,
+      default: '',
     },
     backgroundColor: {
       type: String,
