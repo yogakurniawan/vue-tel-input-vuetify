@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.4.1...v1.5.0) (2022-01-06)
+
+
+### Features
+
+* **lib:** apply some changes from PRs ([a0efb8a](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/a0efb8acbbc4bf0f43e20701021b5f8160712920))
+
 ## [1.4.1](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.4.0...v1.4.1) (2021-09-01)
 
 
