@@ -762,8 +762,9 @@ export default {
 
 .vue-tel-input-vuetify {
   display: flex;
-  align-items: center;
-
+  justify-content: center;
+  align-items: flex-start;
+  
   .country-code {
     width: 75px;
   }
