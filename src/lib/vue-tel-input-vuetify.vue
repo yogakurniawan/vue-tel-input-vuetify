@@ -2,6 +2,7 @@
   <div :class="['vue-tel-input-vuetify', wrapperClasses]">
     <div class="country-code">
       <v-select
+        ref="countryInput"
         v-model="countryCode"
         :append-icon="appendIcon"
         :class="selectClasses"
@@ -506,24 +507,7 @@ export default {
   },
   mounted() {
     this.$watch('$refs.countryInput.isResetting', (v) => v && this.reset());
-    this.initializeCountry()
-      .then(() => {
-        if (
-          !this.phone
-          && this.inputOptions
-          && this.inputOptions.showDialCode
-          && this.activeCountry.dialCode
-        ) {
-          this.phone = `+${this.activeCountry.dialCode}`;
-        }
-        this.countryCode = this.activeCountry;
-        this.$emit('validate', this.phoneObject);
-        this.$emit('onValidate', this.phoneObject); // Deprecated
-      })
-      .catch(console.error)
-      .finally(() => {
-        this.finishMounted = true;
-      });
+    this.reset();
   },
   created() {
     if (this.value) {
@@ -760,9 +744,24 @@ export default {
     },
     reset() {
       this.countryCode = this.activeCountry;
-      this.selectedIndex = this.sortedCountries
-        .map(c => c.iso2)
-        .indexOf(this.activeCountry.iso2);
+      this.initializeCountry()
+        .then(() => {
+          if (
+            !this.phone
+            && this.inputOptions
+            && this.inputOptions.showDialCode
+            && this.activeCountry.dialCode
+          ) {
+            this.phone = `+${this.activeCountry.dialCode}`;
+          }
+          this.countryCode = this.activeCountry;
+          this.$emit('validate', this.phoneObject);
+          this.$emit('onValidate', this.phoneObject); // Deprecated
+        })
+        .catch(console.error)
+        .finally(() => {
+          this.finishMounted = true;
+        });
       this.open = false;
     },
     onChangeCountryCode() {
