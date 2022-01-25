@@ -505,6 +505,7 @@ export default {
     },
   },
   mounted() {
+    this.$watch('$refs.countryInput.isResetting', (v) => v && this.reset());
     this.initializeCountry()
       .then(() => {
         if (
@@ -758,6 +759,7 @@ export default {
       }
     },
     reset() {
+      this.countryCode = this.activeCountry;
       this.selectedIndex = this.sortedCountries
         .map(c => c.iso2)
         .indexOf(this.activeCountry.iso2);
