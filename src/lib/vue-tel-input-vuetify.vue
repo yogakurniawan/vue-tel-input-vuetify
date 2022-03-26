@@ -100,7 +100,7 @@
         <slot name="label"/>
       </template>
       <template #message="{ key, message }">
-        <slot name="label" v-bind="{ key, message }"/>
+        <slot name="message" v-bind="{ key, message }"/>
       </template>
       <template #prepend>
         <slot name="prepend"/>
