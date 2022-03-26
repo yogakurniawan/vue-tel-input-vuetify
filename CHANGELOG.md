@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.5.0...v1.5.1) (2022-03-26)
+
+
+### Bug Fixes
+
+* **lib:** fix message slot in text field ([12ab5f1](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/12ab5f16cc84b651965d0c0fec4315012eba0fa0))
+
 # [1.5.0](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.4.1...v1.5.0) (2022-01-06)
 
 
