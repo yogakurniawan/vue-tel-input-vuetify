@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.5.1...v1.5.2) (2022-03-26)
+
+
+### Bug Fixes
+
+* **lib:** fix [#24](https://github.com/yogakurniawan/vue-tel-input-vuetify/issues/24) ([eb2c223](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/eb2c223a5920058fde4740ec4cf4ed1e243f92a6))
+
 ## [1.5.1](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.5.0...v1.5.1) (2022-03-26)
 
 
