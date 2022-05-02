@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.5.2...v1.5.3) (2022-05-02)
+
+
+### Bug Fixes
+
+* **lib:** add color property ([4310614](https://github.com/yogakurniawan/vue-tel-input-vuetify/commit/431061406707c7f921dee191d457d1678e615d6d))
+
 ## [1.5.2](https://github.com/yogakurniawan/vue-tel-input-vuetify/compare/v1.5.1...v1.5.2) (2022-03-26)
 
 
