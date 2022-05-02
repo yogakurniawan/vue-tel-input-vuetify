@@ -19,6 +19,7 @@
         :shaped="shaped"
         :rounded="rounded"
         :background-color="backgroundColor"
+        :color="color"
         :dense="dense"
         :menu-props="menuProps"
         :height="inputHeight"
@@ -46,6 +47,7 @@
       :suffix="suffix"
       :prefix="prefix"
       :background-color="backgroundColor"
+      :color="color"
       :rules="rules"
       :loader-height="loaderHeight"
       :loading="loading"
@@ -78,7 +80,9 @@
       :autocomplete="autocomplete"
       :id="inputId"
       :maxlength="maxLen"
-      :tabindex="inputOptions && inputOptions.tabindex ? inputOptions.tabindex : 0"
+      :tabindex="
+        inputOptions && inputOptions.tabindex ? inputOptions.tabindex : 0
+      "
       :height="inputHeight"
       @input="onInput"
       @blur="onBlur"
@@ -92,25 +96,25 @@
       @keyup.space="onSpace"
     >
       <template #append>
-        <slot name="append"/>
+        <slot name="append" />
       </template>
       <template #append-outer>
-        <slot name="append-outer"/>
+        <slot name="append-outer" />
       </template>
       <template #label>
-        <slot name="label"/>
+        <slot name="label" />
       </template>
       <template #message="{ key, message }">
-        <slot name="message" v-bind="{ key, message }"/>
+        <slot name="message" v-bind="{ key, message }" />
       </template>
       <template #prepend>
-        <slot name="prepend"/>
+        <slot name="prepend" />
       </template>
       <template #prepend-inner>
-        <slot name="prepend-inner"/>
+        <slot name="prepend-inner" />
       </template>
       <template #progress>
-        <slot name="progress"/>
+        <slot name="progress" />
       </template>
     </v-text-field>
   </div>
@@ -198,6 +202,9 @@ export default {
       default: '',
     },
     backgroundColor: {
+      type: String,
+    },
+    color: {
       type: String,
     },
     rules: {
@@ -432,13 +439,19 @@ export default {
     },
     sortedCountries() {
       // Sort the list countries: from preferred countries to all countries
-      const preferredCountries = this.getCountries(
-        this.preferredCountries,
-      ).map(country => ({ ...country, preferred: true }));
+      const preferredCountries = this.getCountries(this.preferredCountries).map(
+        country => ({
+          ...country,
+          preferred: true,
+        }),
+      );
       return [...preferredCountries, ...this.filteredCountries];
     },
     phoneObject() {
-      const result = PhoneNumber(this.phone || '', this.activeCountry.iso2).toJSON();
+      const result = PhoneNumber(
+        this.phone || '',
+        this.activeCountry.iso2,
+      ).toJSON();
       Object.assign(result, {
         isValid: result.valid,
         country: this.activeCountry,
@@ -506,7 +519,7 @@ export default {
     },
   },
   mounted() {
-    this.$watch('$refs.countryInput.isResetting', (v) => v && this.reset());
+    this.$watch('$refs.countryInput.isResetting', v => v && this.reset());
     this.reset();
   },
   created() {
