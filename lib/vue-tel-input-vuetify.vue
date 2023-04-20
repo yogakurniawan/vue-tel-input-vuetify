@@ -534,8 +534,9 @@ export default {
          * 1. If the phone included prefix (+12), try to get the country and set it
          */
         if (this.phone && this.phone[0] === '+') {
-          const activeCountry = PhoneNumber(this.phone).getRegionCode();
-          if (activeCountry) {
+          const activeCountryCode = PhoneNumber(this.phone).getRegionCode();
+          if (activeCountryCode) {
+            const activeCountry = this.findCountry(activeCountryCode);
             this.choose(activeCountry);
             resolve();
             return;
